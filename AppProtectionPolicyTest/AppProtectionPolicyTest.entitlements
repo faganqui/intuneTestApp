@@ -5,6 +5,8 @@
 	<key>keychain-access-groups</key>
 	<array>
 		<string>$(AppIdentifierPrefix)Bluink.ca.AppProtectionPolicyTest</string>
+		<string>$(AppIdentifierPrefix)com.microsoft.adalcache</string>
+		<string>$(AppIdentifierPrefix)com.microsoft.intune.mam</string>
 	</array>
 </dict>
 </plist>

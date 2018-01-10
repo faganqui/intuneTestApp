@@ -14,6 +14,9 @@
 		7F6045752003F7AF005EA90F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F6045732003F7AF005EA90F /* LaunchScreen.storyboard */; };
 		7F6045802003F7AF005EA90F /* AppProtectionPolicyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60457F2003F7AF005EA90F /* AppProtectionPolicyTestTests.swift */; };
 		7F60458B2003F7AF005EA90F /* AppProtectionPolicyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F60458A2003F7AF005EA90F /* AppProtectionPolicyTestUITests.swift */; };
+		7F6045A32003FB5F005EA90F /* IntuneMAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6045A22003FB5F005EA90F /* IntuneMAM.framework */; };
+		7F6045A42003FB5F005EA90F /* IntuneMAM.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6045A22003FB5F005EA90F /* IntuneMAM.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7F6045A720065BAC005EA90F /* testMAM.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F6045A620065BAC005EA90F /* testMAM.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +36,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7F60459B2003F806005EA90F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7F6045A42003FB5F005EA90F /* IntuneMAM.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		7F6045672003F7AF005EA90F /* AppProtectionPolicyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppProtectionPolicyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F60456A2003F7AF005EA90F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +64,11 @@
 		7F6045862003F7AF005EA90F /* AppProtectionPolicyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppProtectionPolicyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F60458A2003F7AF005EA90F /* AppProtectionPolicyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProtectionPolicyTestUITests.swift; sourceTree = "<group>"; };
 		7F60458C2003F7AF005EA90F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F60459C2003F81F005EA90F /* AppProtectionPolicyTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppProtectionPolicyTest.entitlements; sourceTree = "<group>"; };
+		7F6045A22003FB5F005EA90F /* IntuneMAM.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IntuneMAM.framework; sourceTree = "<group>"; };
+		7F6045A520065BAC005EA90F /* AppProtectionPolicyTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppProtectionPolicyTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		7F6045A620065BAC005EA90F /* testMAM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testMAM.m; sourceTree = "<group>"; };
+		7F6045A820065C3A005EA90F /* testMAM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = testMAM.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6045A32003FB5F005EA90F /* IntuneMAM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +100,7 @@
 		7F60455E2003F7AF005EA90F = {
 			isa = PBXGroup;
 			children = (
+				7F6045A22003FB5F005EA90F /* IntuneMAM.framework */,
 				7F6045692003F7AF005EA90F /* AppProtectionPolicyTest */,
 				7F60457E2003F7AF005EA90F /* AppProtectionPolicyTestTests */,
 				7F6045892003F7AF005EA90F /* AppProtectionPolicyTestUITests */,
@@ -97,12 +121,16 @@
 		7F6045692003F7AF005EA90F /* AppProtectionPolicyTest */ = {
 			isa = PBXGroup;
 			children = (
+				7F60459C2003F81F005EA90F /* AppProtectionPolicyTest.entitlements */,
 				7F60456A2003F7AF005EA90F /* AppDelegate.swift */,
 				7F60456C2003F7AF005EA90F /* ViewController.swift */,
 				7F60456E2003F7AF005EA90F /* Main.storyboard */,
 				7F6045712003F7AF005EA90F /* Assets.xcassets */,
 				7F6045732003F7AF005EA90F /* LaunchScreen.storyboard */,
 				7F6045762003F7AF005EA90F /* Info.plist */,
+				7F6045A620065BAC005EA90F /* testMAM.m */,
+				7F6045A520065BAC005EA90F /* AppProtectionPolicyTest-Bridging-Header.h */,
+				7F6045A820065C3A005EA90F /* testMAM.h */,
 			);
 			path = AppProtectionPolicyTest;
 			sourceTree = "<group>";
@@ -135,6 +163,7 @@
 				7F6045632003F7AF005EA90F /* Sources */,
 				7F6045642003F7AF005EA90F /* Frameworks */,
 				7F6045652003F7AF005EA90F /* Resources */,
+				7F60459B2003F806005EA90F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,7 +222,13 @@
 				TargetAttributes = {
 					7F6045662003F7AF005EA90F = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					7F60457A2003F7AF005EA90F = {
 						CreatedOnToolsVersion = 9.2;
@@ -261,6 +296,7 @@
 			files = (
 				7F60456D2003F7AF005EA90F /* ViewController.swift in Sources */,
 				7F60456B2003F7AF005EA90F /* AppDelegate.swift in Sources */,
+				7F6045A720065BAC005EA90F /* testMAM.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,12 +462,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppProtectionPolicyTest/AppProtectionPolicyTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 339LCUNW6G;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppProtectionPolicyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluink.ca.AppProtectionPolicyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppProtectionPolicyTest/AppProtectionPolicyTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -441,12 +486,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = AppProtectionPolicyTest/AppProtectionPolicyTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 339LCUNW6G;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = AppProtectionPolicyTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Bluink.ca.AppProtectionPolicyTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppProtectionPolicyTest/AppProtectionPolicyTest-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
